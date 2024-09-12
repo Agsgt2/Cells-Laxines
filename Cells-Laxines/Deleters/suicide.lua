@@ -5,3 +5,4 @@ texture="suicide.png"
 
 function Delete(this, destroy)
   this.Delete()
+end --I didnt put a end block :/

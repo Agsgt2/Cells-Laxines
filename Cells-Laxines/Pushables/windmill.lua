@@ -5,5 +5,5 @@ texture="windmill.png"
 updateIndex=2902
 
 function Push(this, dir, bias)
-  return this.Push(dir, bias+this.direction)
+  return this.Push(dir, this.direction)
 end

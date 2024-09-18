@@ -1,5 +1,5 @@
 name = "Suicide"
-id = "Agsgt2_SUICIDE"
+id = "CL_SUICIDE"
 author = "Agsgt2"
 texture = "suicide.png"
 

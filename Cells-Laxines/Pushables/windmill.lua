@@ -1,9 +1,15 @@
-name = "Windmill"
-id = "CL-WINDMILL"
-author = "Agsgt2"
+name = "Cells-Laxines Windmill"
+id = "CL_WINDMILL"
+author = "traincrisis & agsgt2"
 texture = "windmill.png"
-updateIndex = 2902
+updateIndex = 7002
 
-function Push(this, dir, bias)
-  return this.Push(dir, this.direction)
+function Step(this)
+    -- Get the front adjacent cell
+    local front = this.GetCell(this.direction, 1)
+
+    -- Push the front cell away from the Repulsor
+    if front.name ~= "EMPTY" then
+        front.Push(this.direction, 1)
+    end
 end

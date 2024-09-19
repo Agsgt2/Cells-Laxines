@@ -1,8 +1,9 @@
-name = "Suicide"
+name = "Cells-Laxines Suicide"
 id = "CL_SUICIDE"
-author = "Agsgt2"
+author = "traincrisis & agsgt2"
 texture = "suicide.png"
+updateIndex = 9000
 
-function Delete(this, destroy)
-  this.Delete()
-end --I didnt put a end block :/
+function Step(this)
+    this.Delete()
+end
